@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.list {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.item:nth-child(1) {
+  background-color: green;
+  right: 1;
+  bottom: 1;
+}
+.item:nth-child(2) {
+  background-color: blue;
+  z-index: 1;
+  top: 110px;
+  left: 110px;
+}
+.item:nth-child(3) {
+    background-color: red;
+    right: 0;
+    bottom: 0;
+  }
+.item {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+}
+.item:first-child body {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
